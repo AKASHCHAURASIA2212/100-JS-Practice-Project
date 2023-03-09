@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dictionary</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container-fluid w-100 shadow p-3 bg-light bg-dark">
+        <!-- A fluid container that uses the full witdh -->
+        <h2 class="font-weight text-center text-info">Dictionary</h2>
+      </div>
+    </nav>
+    <header class="container mt-2">
+      <div id="google_translate_element"></div>
+    </header>
+    <section
+      class="container mt-3 p-5 d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="searchbox mb-3 d-flex align-items-center">
+        <input
+          class="border border-dark rounded px-2 py-1"
+          type="text"
+          name=""
+          id="input"
+          placeholder="Type a Word"
+          value=""
+        />
+        <button id="search" class="btn btn-outline-dark m-1 p-1">Search</button>
+      </div>
+
+      <div class="search_result" id="resultBox">
+        <!-- <div
+          class="word text-danger text-center text-uppercase px-2 py-1"
+          id="word"
+        >
+          <h1>Apple</h1>
+        </div>
+
+        <div class="word_def mb-3">
+          <h5 class="text-success font-weight-bolder text-center">
+            A common, round fruit produced by the tree Malus domestica,
+            cultivated in temperate climates
+          </h5>
+        </div>
+        <div class="word_exa text-center lead">
+          Eg:
+          <span class="text-info">hello there, Katie!</span>
+        </div>
+        <div class="word_aud align-items-center text-center">
+          <button class="btn btn-info btn-lg px-6 my-3">gjbjdjgbdhg</button>
+        </div>
+
+        <div class="no_result text-center text-danger">
+          <h3>No Definitions Found</h3>
+        </div> -->
+      </div>
+    </section>
+    <script src="./script.js" defer></script>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+  </body>
+</html>
